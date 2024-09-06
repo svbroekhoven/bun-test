@@ -4,7 +4,7 @@ serve({
     fetch(request){
         const url = new URL(request.url);
         if (url.pathname === '/'){
-            return new Response(JSON.stringify({message: "OK"}), {
+            return new Response(JSON.stringify({"Status": "OK"}), {
                 headers: {'content-type': 'application/json'}
             });
         } else {
@@ -15,4 +15,4 @@ serve({
     port: 3000,
 })
 
-console.log (`Server is running`);
+console.log (`Server is running.`);
