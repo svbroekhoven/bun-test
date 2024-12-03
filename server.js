@@ -4,7 +4,7 @@ serve({
     fetch(request){
         const url = new URL(request.url);
         if (url.pathname === '/'){
-            return new Response(JSON.stringify({"Status": "OK"}), {
+            return new Response(JSON.stringify({"Status": "Updated"}), {
                 headers: {'content-type': 'application/json'}
             });
         } else {
